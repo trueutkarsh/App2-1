@@ -1,0 +1,180 @@
+<Page
+    x:Class="App2.NextPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid1" Background="#444444">
+        <TextBlock x:Name="title1" HorizontalAlignment="Center"
+                   Margin="403,29,403,0"
+                   TextWrapping="Wrap"
+                   Text="UPDATE DETAILS"
+                   FontFamily="Georgia"
+                   FontSize="54"
+                   VerticalAlignment="Top"
+                   Height="101"
+                   RenderTransformOrigin="0.5,0.5"
+                   Width="474"  Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="titleshadow1" HorizontalAlignment="Center"
+        	Margin="408,35,398,0"
+        	TextWrapping="Wrap"
+        	Text="UPDATE DETAILS"
+        	FontFamily="Georgia"
+        	FontSize="54"
+            FontStyle="Italic"
+        	VerticalAlignment="Top"
+        	Height="101"
+        	RenderTransformOrigin="0.5,0.5"
+        	Width="474"  Opacity="0.3" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="-0.51"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <RadioButton x:Name="radioButton2"
+                     
+             Content="Female" FontSize="36"
+             Foreground="White"
+             Padding="6,2,0,0"
+             FontFamily="Helvetica"
+             HorizontalAlignment="Left"
+            Margin="692,164,0,0"
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="0.533,0.05" 
+            Checked="radioButton2_Checked"/>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Sex:"
+        	FontFamily="Helvetica"
+            FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+            Margin="157,164,979,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <RadioButton x:Name="radioButton1"
+                                 
+                     Content="Male" FontSize="36"
+                     Foreground="White"
+                     Padding="6,2,0,0"
+                     FontFamily="Helvetica"
+                     HorizontalAlignment="Left"
+                     Margin="432,164,0,0"
+                      VerticalAlignment="Top" Checked="radioButton1_Checked"/>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Age:"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="159,234,977,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="Age" 
+                 HorizontalAlignment="Left"
+                 TextWrapping="Wrap"
+                 
+                 VerticalAlignment="Top"
+                 Margin="475,234,0,0" RenderTransformOrigin="0.5,0.5" TextChanged="Age_TextChanged"/>
+        <TextBlock x:Name="Height1" HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Height:"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="159,304,977,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="Height" 
+        	HorizontalAlignment="Left"
+        	TextWrapping="Wrap"
+                 
+        	VerticalAlignment="Top"
+        	Margin="475,304,0,0" RenderTransformOrigin="0.858,0.925" TextChanged="Height_TextChanged"/>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Weight:"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="159,374,977,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="Weight" 
+        	HorizontalAlignment="Left"
+        	TextWrapping="Wrap"
+                 
+        	VerticalAlignment="Top"
+        	Margin="475,374,0,0" RenderTransformOrigin="0.858,0.925" TextChanged="Weight_TextChanged"/>
+        <Button x:Name="startbutton" Content="Next" HorizontalAlignment="Center" 
+                Margin="0,612,0,0" 
+                FontSize="44"
+                VerticalAlignment="Top" Height="65" Width="269"
+                Click="OnStart" FontFamily="Helvetica" Foreground="White"
+                >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF444444" Offset="0"/>
+                    <GradientStop Color="#FFAAAAAA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="LifeStyle:"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="703,304,413,0"
+        	Width="164"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <ComboBox
+                  x:Name="options" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top"
+                  Width="130"
+                  Margin="1019,304,0,0" DropDownClosed="options_DropDownClosed">
+            <ComboBoxItem Name="item1">Sedentary</ComboBoxItem>
+            <ComboBoxItem Name="item2">Lightly Active</ComboBoxItem>
+            <ComboBoxItem Name="item3">Moderately Active</ComboBoxItem>
+            <ComboBoxItem Name="item4">Very Active</ComboBoxItem>
+            <ComboBoxItem Name="item5">Extremely Active</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>

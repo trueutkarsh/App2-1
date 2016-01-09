@@ -1,0 +1,108 @@
+<Page
+    x:Class="App2.Result"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid1" Background="#CCCCCC">
+        <TextBlock x:Name="title1" HorizontalAlignment="Center"
+    		Margin="0,29,0,0"
+    		TextWrapping="Wrap"
+    		Text="DATA"
+    		FontFamily="Georgia"
+    		FontSize="54"
+    		VerticalAlignment="Top"
+    		Height="101"
+    		RenderTransformOrigin="0.5,0.5"
+    		Width="182"  Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="titleshadow1" HorizontalAlignment="Center"
+    		Margin="20,35,0,0"
+    		TextWrapping="Wrap"
+    		Text="DATA"
+    		FontFamily="Georgia"
+    		FontSize="54"
+    		FontStyle="Italic"
+    		VerticalAlignment="Top"
+    		Height="101"
+    		RenderTransformOrigin="0.5,0.5"
+    		Width="203"  Opacity="0.3" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="-0.51"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Ideal Calories For You"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="157,164,644,0"
+        	Width="479"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="Calories You Should Intake"
+        	FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="157,274,644,0"
+        	Width="479"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="882,164,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="TextBlock" 
+                   FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+                   Opacity="1" Foreground="White"
+                   Width="261"/>
+        <TextBlock x:Name="textBlock_Copy"
+                   HorizontalAlignment="Left"
+                   Margin="882,274,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="TextBlock"
+                   FontFamily="Helvetica"
+        	FontWeight="Bold"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+                   Opacity="1" Foreground="White"
+                   Width="261"/>
+        <Button x:Name="startbutton" Content="Next" HorizontalAlignment="Center" 
+        	Margin="462,540,549,0" 
+        	FontSize="44"
+        	VerticalAlignment="Top" Height="65" Width="269" FontFamily="Helvetica" Foreground="White"
+                >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF444444" Offset="0"/>
+                    <GradientStop Color="#FFAAAAAA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+
+    </Grid>
+</Page>
