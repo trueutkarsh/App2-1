@@ -8,14 +8,21 @@
     mc:Ignorable="d">
 
     <Grid x:Name="grid1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ComboBox x:Name="cb1" HorizontalAlignment="Left" Height="42" Margin="167,519,0,0" VerticalAlignment="Top" Width="298" DropDownClosed="comboBox_DropDownClosed" FontFamily="HELVETICA" FontSize="24"/>
+        <ComboBox x:Name="cb1" HorizontalAlignment="Left"
+                  Height="42"
+                  Margin="167,519,0,0"
+                  VerticalAlignment="Top"
+                  Width="298" 
+                  DropDownClosed="comboBox_DropDownClosed" 
+                  FontFamily="HELVETICA"
+                  FontSize="24"/>
         <TextBox x:Name="textBox" 
                  HorizontalAlignment="Left" 
                  Height="42" 
                  Margin="919,519,0,0" 
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
-                 Width="202" 
+                 Width="298" 
                  FontFamily="helvetica" 
                  FontSize="24"/>
         <TextBlock x:Name="tb1"
@@ -33,8 +40,34 @@
                 Height="57"
                 Margin="164,636,0,0"
                 VerticalAlignment="Top"
-                Width="190" Click="button_Click" FontFamily="Helvetica" FontSize="29.333"/>
-        <Button x:Name="button1" Content="Burn" HorizontalAlignment="Left" Height="57" Margin="942,636,0,0" VerticalAlignment="Top" Width="182" Click="button1_Click" FontFamily="Helvetica" FontSize="26.667"/>
+                Width="190" 
+                Click="button_Click"
+                FontFamily="Helvetica"
+                FontSize="29.333">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF444444" Offset="0"/>
+                    <GradientStop Color="#FFAAAAAA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" 
+                Content="Burn Intake" 
+                HorizontalAlignment="Left"
+                Height="57" 
+                Margin="942,636,0,0" 
+                VerticalAlignment="Top"
+                Width="182"
+                Click="button1_Click" 
+                FontFamily="Helvetica"
+                FontSize="26.667">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF444444" Offset="0"/>
+                    <GradientStop Color="#FFAAAAAA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            </Button>
         <TextBlock x:Name="title1" HorizontalAlignment="Center"
         	Margin="426,29,466,0"
         	TextWrapping="Wrap"

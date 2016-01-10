@@ -66,6 +66,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="221,365,0,0" VerticalAlignment="Top" Width="100" Source="Assets/490.GIF" Stretch="UniformToFill"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="173" Margin="1023,272,0,0" VerticalAlignment="Top" Width="170" Source="Assets/Picture1.png" Stretch="UniformToFill"/>
+        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="173" Margin="129,272,0,0" VerticalAlignment="Top" Width="220" Source="Assets/Picture2.png" Stretch="UniformToFill"/>
     </Grid>
 </Page>
