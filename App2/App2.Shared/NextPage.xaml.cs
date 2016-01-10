@@ -1,3 +1,4 @@
+using App2.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -34,6 +35,11 @@ namespace App2
             grid1.Background = StartPage.grid2.Background;
             title1.Foreground = StartPage.title1.Foreground;
             titleshadow1.Foreground = StartPage.titleshadow1.Foreground;
+            Sex1.Foreground = StartPage.block1.Foreground;
+            Age1.Foreground = StartPage.block1.Foreground;
+            Height1.Foreground = StartPage.block1.Foreground;
+            Weight1.Foreground = StartPage.block1.Foreground;
+            Lifestyle1.Foreground = StartPage.block1.Foreground;
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
@@ -81,6 +87,10 @@ namespace App2
             {
                 isMale = false;
             }
+
+            User user = new User(PersonalDetails.name,PersonalDetails.mobileNo,height,weight,isMale,s1,PersonalDetails.planLose);
+            App.dbh.upsert(user);
+            
             if (s1 * age * height * weight != 0)
             {
                 this.Frame.Navigate(typeof(Result));

@@ -70,6 +70,7 @@ namespace App2
         private void startbutton_Click(object sender, RoutedEventArgs e)
         {
             name = Name.Text;
+            title1.Text = AddFood.s2.ToString();
             mobileNo = Mobile_no.Text;
             val1 = radioButton1.IsChecked;
             if (val1 == true)
@@ -80,7 +81,6 @@ namespace App2
             {
                 planLose = false;
             }
-            this.Frame.Navigate(typeof(NextPage));
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)

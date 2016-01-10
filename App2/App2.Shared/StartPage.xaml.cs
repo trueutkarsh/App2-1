@@ -25,12 +25,14 @@ namespace App2
         public static Grid grid2;
         public static TextBlock title1;
         public static TextBlock titleshadow1;
+        public static TextBlock block1;
         public StartPage()
         {
             this.InitializeComponent();
             grid2 = grid1;
             title1 = title2;
             titleshadow1 = titleshadow2;
+            block1 = block;
         }
 
         private void OnStart(object sender, RoutedEventArgs e)

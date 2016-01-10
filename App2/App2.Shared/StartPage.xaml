@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="grid1" Background="SlateGray">
+    <Grid x:Name="grid1" Background="Maroon">
         <TextBlock x:Name="title2" HorizontalAlignment="Center"
                    Margin="0,133,0,0"
                    TextWrapping="Wrap"
@@ -37,7 +37,7 @@
                 <CompositeTransform ScaleY="-0.51"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock
+        <TextBlock x:Name="block"
             HorizontalAlignment="Center"
         	Margin="0,433,0,0"
                    TextWrapping="Wrap"
@@ -66,6 +66,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="288,333,0,0" VerticalAlignment="Top" Width="100" Source="Assets/490.GIF" Stretch="UniformToFill"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="221,365,0,0" VerticalAlignment="Top" Width="100" Source="Assets/490.GIF" Stretch="UniformToFill"/>
     </Grid>
 </Page>

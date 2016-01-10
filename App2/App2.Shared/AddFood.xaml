@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="App2.AddFood"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ComboBox x:Name="cb1" HorizontalAlignment="Left" Height="42" Margin="167,519,0,0" VerticalAlignment="Top" Width="298" DropDownClosed="comboBox_DropDownClosed" FontFamily="HELVETICA" FontSize="24"/>
+        <TextBox x:Name="textBox" 
+                 HorizontalAlignment="Left" 
+                 Height="42" 
+                 Margin="919,519,0,0" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="202" 
+                 FontFamily="helvetica" 
+                 FontSize="24"/>
+        <TextBlock x:Name="tb1"
+                   HorizontalAlignment="Center"
+                   Height="80"
+                   Margin="397,298,397,0" 
+                   TextWrapping="Wrap" 
+                   VerticalAlignment="Top"
+                   Width="572"
+                   FontFamily="Helvetica" 
+                   FontSize="48"/>
+        <Button x:Name="button"
+                Content="Food Intake"
+                HorizontalAlignment="Left"
+                Height="57"
+                Margin="164,636,0,0"
+                VerticalAlignment="Top"
+                Width="190" Click="button_Click" FontFamily="Helvetica" FontSize="29.333"/>
+        <Button x:Name="button1" Content="Burn" HorizontalAlignment="Left" Height="57" Margin="942,636,0,0" VerticalAlignment="Top" Width="182" Click="button1_Click" FontFamily="Helvetica" FontSize="26.667"/>
+        <TextBlock x:Name="title1" HorizontalAlignment="Center"
+        	Margin="426,29,466,0"
+        	TextWrapping="Wrap"
+        	Text="DAILY INTAKE"
+        	FontFamily="Georgia"
+        	FontSize="54"
+        	VerticalAlignment="Top"
+        	Height="101"
+        	RenderTransformOrigin="0.5,0.5"
+        	Width="474"  Foreground="GhostWhite">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="titleshadow1" HorizontalAlignment="Center"
+        	Margin="424,35,489,0"
+        	TextWrapping="Wrap"
+        	Text="DAILY INTAKE"
+        	FontFamily="Georgia"
+        	FontSize="54"
+        	FontStyle="Italic"
+        	VerticalAlignment="Top"
+        	Height="101"
+        	RenderTransformOrigin="0.5,0.5"
+        	Width="453"  Opacity="0.3" Foreground="GhostWhite">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="-0.51"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="tb1_Copy"
+        	HorizontalAlignment="Center"
+        	Height="76"
+        	Margin="397,141,397,0" 
+        	TextWrapping="Wrap" 
+        	VerticalAlignment="Top"
+        	Width="572"
+        	FontFamily="Helvetica" 
+        	FontSize="48"/>
+        <Button x:Name="startbutton"
+                Content="EDIT DETAILS"
+                HorizontalAlignment="Center" 
+        	Margin="1014,30,49,0" 
+        	FontSize="44"
+        	VerticalAlignment="Top" Height="65" Width="303"
+        	Click="OnStart" FontFamily="Helvetica" Foreground="White"
+                >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF444444" Offset="0"/>
+                    <GradientStop Color="#FFAAAAAA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>

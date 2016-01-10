@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace App2.Models
 {
-    class Log
+    public class Log
     {
         public float cumCalorie { get; set; }
         public DateTime time { get; set; }
+        public string name { get; set; }
 
         public Log() {
 
         }
 
-        public Log(float cal) {
-            this.cumCalorie = cal;
-            this.time = new DateTime();
+        public Log(float cal,string Name) {
+            cumCalorie = cal;
+            time = new DateTime();
+            name = Name;
             
         }
     }

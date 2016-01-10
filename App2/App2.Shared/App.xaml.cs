@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App2.Helpers;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,6 +17,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using App2.Models;
+using App2.Helpers;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -26,9 +29,12 @@ namespace App2
     /// </summary>
     public sealed partial class App : Application
     {
+       public static DatabaseHelper dbh = new DatabaseHelper();
         public static string DB_PATH =Path.Combine(ApplicationData.Current.LocalFolder.Path, "FoodItems2.sqlite");//DataBase Name   
         public static string DB_PATH2 =Path.Combine(ApplicationData.Current.LocalFolder.Path, "User2.sqlite");//DataBase Name   
         public static string DB_PATH3 = Path.Combine(ApplicationData.Current.LocalFolder.Path, "Log.sqlite");//DataBase Name   
+
+
 
 
 
@@ -44,6 +50,7 @@ namespace App2
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            dbh.onCreate();
         }
 
         /// <summary>

@@ -49,7 +49,7 @@
             VerticalAlignment="Top" 
             RenderTransformOrigin="0.533,0.05" 
             Checked="radioButton2_Checked"/>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Sex1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Sex:"
         	FontFamily="Helvetica"
@@ -73,7 +73,7 @@
                      HorizontalAlignment="Left"
                      Margin="432,164,0,0"
                       VerticalAlignment="Top" Checked="radioButton1_Checked"/>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Age1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Age:"
         	FontFamily="Helvetica"
@@ -115,7 +115,7 @@
                  
         	VerticalAlignment="Top"
         	Margin="475,304,0,0" RenderTransformOrigin="0.858,0.925" TextChanged="Height_TextChanged"/>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Weight1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Weight:"
         	FontFamily="Helvetica"
@@ -149,7 +149,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Lifestyle1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="LifeStyle:"
         	FontFamily="Helvetica"
@@ -176,5 +176,33 @@
             <ComboBoxItem Name="item4">Very Active</ComboBoxItem>
             <ComboBoxItem Name="item5">Extremely Active</ComboBoxItem>
         </ComboBox>
+        <TextBlock x:Name="Height1_Copy" HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="cm"
+        	FontFamily="Helvetica"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="550,304,672,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center"
+        	TextWrapping="Wrap"
+        	Text="kg"
+        	FontFamily="Helvetica"
+        	FontSize="36"
+        	VerticalAlignment="Top"
+        	Height="46"
+        	RenderTransformOrigin="0.5,0.5"
+        	Margin="546,374,676,0"
+        	Width="144"  Opacity="1" Foreground="White">
+            <TextBlock.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
     </Grid>
 </Page>

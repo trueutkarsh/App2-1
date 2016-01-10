@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using App2.Models;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -33,6 +34,9 @@ namespace App2
             grid1.Background = StartPage.grid2.Background;
             title1.Foreground = StartPage.title1.Foreground;
             titleshadow1.Foreground = StartPage.titleshadow1.Foreground;
+            Name1.Foreground = StartPage.block1.Foreground;
+            No1.Foreground = StartPage.block1.Foreground;
+            Plan1.Foreground = StartPage.block1.Foreground;
         }
 
         private void OnStart(object sender, RoutedEventArgs e)
@@ -48,6 +52,8 @@ namespace App2
             {
                 planLose = false;
             }
+            User user = new User();
+            App.dbh.upsert(user);
             this.Frame.Navigate(typeof(NextPage));
 
         }

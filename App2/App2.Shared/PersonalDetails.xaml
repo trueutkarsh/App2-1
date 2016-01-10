@@ -37,7 +37,7 @@
                 <CompositeTransform ScaleY="-0.51"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Name1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Name:"
         	FontFamily="Helvetica"
@@ -52,7 +52,7 @@
                 <CompositeTransform ScaleY="1"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="No1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Mobile No.:"
         	FontFamily="Helvetica"
@@ -67,7 +67,7 @@
                 <CompositeTransform ScaleY="1"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Center"
+        <TextBlock x:Name="Plan1" HorizontalAlignment="Center"
         	TextWrapping="Wrap"
         	Text="Plan:"
         	FontFamily="Helvetica"

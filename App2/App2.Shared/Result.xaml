@@ -90,9 +90,9 @@
                    Opacity="1" Foreground="White"
                    Width="261"/>
         <Button x:Name="startbutton" Content="Next" HorizontalAlignment="Center" 
-        	Margin="462,540,549,0" 
+        	Margin="0,612,0,0" 
         	FontSize="44"
-        	VerticalAlignment="Top" Height="65" Width="269" FontFamily="Helvetica" Foreground="White"
+        	VerticalAlignment="Top" Height="65" Width="269" FontFamily="Helvetica" Foreground="White" Click="startbutton_Click"
                 >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

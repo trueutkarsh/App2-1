@@ -22,6 +22,7 @@ namespace App2
     /// </summary>
     public sealed partial class Result : Page
     {
+        public static double calto;
         public Result()
         {
             this.InitializeComponent();
@@ -45,18 +46,23 @@ namespace App2
             {
                 calories = calories - 500;
                 calories = Math.Round(calories, 2);
+                calto = calories;
                 textBlock_Copy.Text = calories.ToString() + " cal";
             }
             else
             {
                 calories += 500;
                 calories = Math.Round(calories, 2);
+                calto = calories;
                 textBlock_Copy.Text = calories.ToString() + " cal";
             }
 
         }
 
-
+        private void startbutton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AddFood));
+        }
     }
 }
 
